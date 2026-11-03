@@ -1,0 +1,7 @@
+/build/
+/dist/
+/art/
+/.idea/
+/.vscode/
+*.log
+*.tmp
