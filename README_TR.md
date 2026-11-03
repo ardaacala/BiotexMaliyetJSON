@@ -8,6 +8,12 @@ Bu proje `AuraCosmetics` dışında bağımsızdır. Windows'ta çevrimdışı �
 2. `BiotexMaliyetJSON.exe` dosyasını açın. Paketteki `app` ve `runtime` klasörleri aynı yerde kalsın.
 3. Ürün oluşturun veya **Excel Aktarımı** ekranında paketin `app/sources/maliyet-hesaplamalari.zip` dosyasını önizleyip aktarın.
 
+## Adım adım eğitim
+
+İlk açılışta uygulama turu otomatik başlar. Her adımda ilgili düğme veya alanın kenarı yanıp söner; açıklama penceresinden **İleri**, **Geri** veya **Kapat** seçebilirsiniz. İşaretli yere tıklamak da sonraki adıma geçer. Eğitim sırasında işaretli düğmenin gerçek işlemi çalıştırılmaz; böylece yanlışlıkla kayıt eklenmez veya dosya açılmaz.
+
+Sağ üstteki **?** düğmesinden bulunduğunuz bölümün eğitimini veya tüm uygulama turunu istediğiniz zaman yeniden açabilirsiniz. Ürün detayına girdiğinizde aynı düğme **Genel bilgiler**, **Set içeriği**, **Reçete**, **Operasyonlar** ve **Maliyet** alt sekmelerini anlatır. Tüm tur, kayıtlı ürün varsa bu alt sekmeleri de gezer. İlk açılışta henüz ürün yoksa, ürün oluşturduktan sonra detay ekranındaki **?** ile bu bölümü öğrenebilirsiniz.
+
 ## Ekranlar
 
 - **Genel Bakış:** Ürün, malzeme, fiyat ve teklif sayıları.

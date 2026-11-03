@@ -14,6 +14,7 @@ public final class JsonStore {
     public static final class State {
         public int schemaVersion=SCHEMA_VERSION;
         public long nextId=1;
+        public boolean tutorialCompleted=false;
         public List<Map<String,Object>> products=new ArrayList<>(), components=new ArrayList<>(), recipeLines=new ArrayList<>(), materials=new ArrayList<>(), suppliers=new ArrayList<>(), prices=new ArrayList<>(), rates=new ArrayList<>(), operations=new ArrayList<>(), profiles=new ArrayList<>(), rules=new ArrayList<>(), customers=new ArrayList<>(), estimates=new ArrayList<>(), imports=new ArrayList<>(), issues=new ArrayList<>(), changes=new ArrayList<>();
         public List<Map<String,Object>> table(String name){return switch(name){case "products"->products;case "components"->components;case "recipeLines"->recipeLines;case "materials"->materials;case "suppliers"->suppliers;case "prices"->prices;case "rates"->rates;case "operations"->operations;case "profiles"->profiles;case "rules"->rules;case "customers"->customers;case "estimates"->estimates;case "imports"->imports;case "issues"->issues;case "changes"->changes;default->throw new IllegalArgumentException("Unknown table: "+name);};}
         public Map<String,Object> add(String table,Map<String,Object> fields){Map<String,Object> row=new LinkedHashMap<>(fields);row.put("id",nextId++);table(table).add(row);return row;}
